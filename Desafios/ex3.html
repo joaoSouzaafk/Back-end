@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NutriVida - Calculadora de IMC</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8e9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #66bb6a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 10px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px #cccccc;
+        }
+
+        .imagem {
+            text-align: center;
+        }
+
+        .imagem img {
+            width: 300px;
+            border-radius: 15px;
+        }
+
+        .explicacao {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        form {
+            margin-top: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            background-color: #43a047;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e7d32;
+        }
+
+        .chamada {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f5e9;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🥗 NutriVida</h1>
+
+        <p>Clínica de Nutrição e Saúde</p>
+
+    </header>
+
+
+    <div class="container">
+
+        <div class="imagem">
+
+            <img src="nutricao.jpg" alt="Imagem relacionada à nutrição">
+
+        </div>
+
+
+        <div class="explicacao">
+
+            <h2>📊 Calculadora de IMC</h2>
+
+            <p>
+                Acompanhar o peso e manter hábitos saudáveis pode
+                contribuir para uma melhor qualidade de vida.
+            </p>
+
+            <p>
+                Preencha os dados abaixo para calcular seu IMC
+                e conhecer a classificação do resultado.
+            </p>
+
+        </div>
+
+
+        <form action="ex3.php" method="post">
+
+            <label>👤 Digite seu nome:</label>
+            <input type="text" name="nome" required>
+
+
+            <label>⚖️ Digite seu peso (kg):</label>
+            <input type="number" name="peso" step="0.01" required>
+
+
+            <label>📏 Digite sua altura (m):</label>
+            <input type="number" name="altura" step="0.01" required>
+
+
+            <button type="submit">Calcular IMC</button>
+
+        </form>
+
+
+        <div class="chamada">
+
+            <h3>💚 Quer cuidar melhor da sua saúde?</h3>
+
+            <p>
+                Agende uma consulta com nossa nutricionista!
+            </p>
+
+            <button>📅 Agendar consulta</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
